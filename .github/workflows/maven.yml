@@ -43,7 +43,8 @@ jobs:
       # Step 6: Build Docker image using Dockerfile in your repo
       - name: Build Docker Image - POC
         run: |
-          docker build -t europe-west1-docker.pkg.dev/poc-setup-462605/poc-docker-repo/poc-app:latest .  
+          docker build -t europe-west1-docker.pkg.dev/poc-setup-462605/poc-docker-repo/poc-app:latest SpringBootApp/SpringBootApp/SpringBootApp
+  
           # Builds image and tags it with Artifact Registry path
 
       # Step 7: Push the Docker image to GCP Artifact Registry
