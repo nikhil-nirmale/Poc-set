@@ -27,7 +27,7 @@ jobs:
 
       # Step 3: Build Java project using Maven
       - name: Build with Maven - POC
-        run: mvn clean package pom.xml  # -B = batch mode (no prompts), builds with pom.xml
+        run:  mvn -B package --file pom.xml  # -B = batch mode (no prompts), builds with pom.xml
 
       # Step 4: Authenticate GitHub Actions with your GCP account
       - name: Authenticate with GCP - POC
